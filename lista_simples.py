@@ -29,10 +29,13 @@ class ListaSimples():
     def exclui(self, ch):
         ant = self.inicio 
         atual = self.__busca_aux(ch, ant)
+
         if not atual:
             print("O item a ser deletado nao existe na lista")
             return False
+
         ant.prox = atual.prox
+
         return True
 
 
